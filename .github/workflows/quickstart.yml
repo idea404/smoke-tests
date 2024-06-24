@@ -27,7 +27,7 @@ jobs:
 
       - name: Install Omni CLI
         run: |
-          curl -sSfL https://raw.githubusercontent.com/omni-network/omni/main/scripts/install_omni_cli.sh | sh -s || true
+          curl -sSfL https://raw.githubusercontent.com/omni-network/omni/main/scripts/install_omni_cli.sh | bash -s || true
 
       - name: Scaffold a new project
         run: |
