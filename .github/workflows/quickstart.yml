@@ -40,6 +40,11 @@ jobs:
           cd my-omni-dapp
           ~/bin/omni devnet start
 
+      - name: List directory structure
+        run: |
+          cd my-omni-dapp
+          ls -R
+
       - name: Deploy contracts
         run: |
           cd my-omni-dapp
