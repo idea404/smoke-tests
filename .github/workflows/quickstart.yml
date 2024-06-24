@@ -40,6 +40,10 @@ jobs:
           cd my-omni-dapp
           ~/bin/omni devnet start
 
+      - name: Correct path case sensitivity
+        run: |
+          find . -type f -name '*.sol' -exec sed -i 's|omni/contracts/src/Libraries/ConfLevel.sol|omni/contracts/src/libraries/ConfLevel.sol|g' {} +
+
       - name: List directory structure
         run: |
           cd my-omni-dapp
