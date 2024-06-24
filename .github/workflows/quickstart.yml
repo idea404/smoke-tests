@@ -1,4 +1,4 @@
-name: Omni Cross-Chain dApp CI
+name: Omni Quickstart
 
 on:
   push:
@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
