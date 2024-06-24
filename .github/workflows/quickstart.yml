@@ -30,13 +30,12 @@ jobs:
         run: |
           mkdir my-omni-dapp
           cd my-omni-dapp
-          omni developer new
+          ~/bin/omni developer new
 
       - name: Start local devnet
         run: |
           cd my-omni-dapp
-          omni devnet start &
-          sleep 30  # Wait for the devnet to start
+          ~/bin/omni devnet start
 
       - name: Deploy contracts
         run: |
